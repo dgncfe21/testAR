@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Geolocation App</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ar.js"></script>
+</head>
+<body style="margin: 0; overflow: hidden;">
+    <a-scene embedded arjs>
+        <!-- Location 1 -->
+        <a-entity gps-entity-place="Latitude: 25.69920755459637,Longitude: -100.31762767193608;">
+            <!-- Your content for Location 1 -->
+            <a-image src="path/to/image-1.jpg" scale="1 1 1"></a-image>
+        </a-entity>
+
+        <!-- Location 2 -->
+        <a-entity gps-entity-place="Latitude: 25.69920755459637,Longitude:  -100.31767508714103;">
+            <!-- Your content for Location 2 -->
+            <a-video src="path/to/video-2.mp4" scale="1 1 1"></a-video>
+        </a-entity>
+
+        <!-- Add more locations as needed -->
+
+        <!-- Handle camera and scene lighting -->
+        <a-entity camera></a-entity>
+        <a-light type="ambient" position="0 5 0" intensity="0.5"></a-light>
+    </a-scene>
+
+    <script>
+        // Handle geolocation
+        navigator.geolocation.getCurrentPosition((position) => {
+            const latitude = position.coords.latitude;
+            const longitude = position.coords.longitude;
+            // Update the positions of the gps-entity-place components
+            document.querySelectorAll('[gps-entity-place]').forEach((element) => {
+                const coordinates = element.getAttribute('gps-entity-place');
+                element.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
+            });
+        });
+    </script>
+</body>
+</html>
