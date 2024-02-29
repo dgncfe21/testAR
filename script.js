@@ -23,7 +23,7 @@ function staticLoadPlaces() {
 
 var models = [
     {
-        url: './assets/magnemite/scene.gltf',
+        url: './assets/pole/scene.gltf',
         scale: '0.5 0.5 0.5',
         info: 'DGN CFE GOLFO NORTE',
         rotation: '0 180 0',
