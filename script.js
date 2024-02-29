@@ -19,3 +19,4 @@ AFrame.registerComponent('geo-point', {
     scene.appendChild(marker);
   }
 });
+
