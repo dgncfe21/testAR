@@ -16,7 +16,7 @@ function staticLoadPlaces() {
                 lat: 25.699211497800306,
                lng: -100.3176159120599,
             },
-            text: 'Inicio',
+         
         },
     ];
 }
