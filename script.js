@@ -29,6 +29,13 @@ var models = [
         rotation: '0 180 0',
         
     }
+    ,
+    {
+        url: './assets/pole/scene.gltf',
+        scale: '0.2 0.2 0.2',
+        rotation: '0 180 0',
+        info: 'Articuno, Lv. 80, HP 100/100',
+    },
 ];
 
 var modelIndex = 0;
