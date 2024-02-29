@@ -25,11 +25,11 @@ var models = [
     {
         url: './assets/traf/scene.gltf',
         scale: '0.5 0.5 0.5',
-        info: 'DGN CFE GOLFO NORTE',
         rotation: '0 180 0',
+        info: 'DGN CFE GOLFO NORTE',
+       
         
-    }
-    ,
+    },
     {
         url: './assets/pole/scene.gltf',
         scale: '0.2 0.2 0.2',
