@@ -1,0 +1,11 @@
+Model Information:
+* title:	electricity pole
+* source:	https://sketchfab.com/3d-models/electricity-pole-e459ac4805104fe59a46742d5f937838
+* author:	noortjeschuur (https://sketchfab.com/noortjeschuur)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "electricity pole" (https://sketchfab.com/3d-models/electricity-pole-e459ac4805104fe59a46742d5f937838) by noortjeschuur (https://sketchfab.com/noortjeschuur) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
