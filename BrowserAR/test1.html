@@ -2,10 +2,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-   
-<!DOCTYPE html>
-<html>
-  <head>
   <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/ar.js"></script>
   </head>
@@ -13,82 +9,26 @@
     <div id="ar-container">
       <a-scene embedded arjs>
         <a-marker preset="hiro">
-          <!-- Add your 3D objects here -->
-          <a-entity
-            geometry="primitive: plane; width: 1; height: 1;"
-            material = "src:img1.jpg"
-            scale="0.1 0.1 0.1"
-            position="25.699185232118268, -100.31764373239147,0"
-          ></a-entity>
-          
-          <!-- Add more entities for other places -->
-          <a-entity
-           geometry="primitive: plane; width: 1; height: 1;"
-            material = "src:img2.jpg"
+        <a-entity
+            gltf-model="url(files/f1/scene.gltf)"
             scale="0.1 0.1 0.1"
             position="25.69920755459637,-100.31762767193608,0"
           ></a-entity>
           
           <a-entity
-            geometry="primitive: plane; width: 1; height: 1;"
-            material = "src:img2.jpg"
+            gltf-model="url(files/f1/scene.gltf)"
             scale="0.1 0.1 0.1"
             position="25.69920755459637,-100.31767508714103,0"
           ></a-entity>
           
           <a-entity
-            geometry="primitive: plane; width: 1; height: 1;"
-            material = "src:img1.jpg"
+             gltf-model="url(files/f1/scene.gltf)"
             scale="0.1 0.1 0.1"
             position="25.699210005273066,-100.3176008170469,0"
           ></a-entity>
           
           <a-entity
-            geometry="primitive: plane; width: 1; height: 1;"
-            material = "src:img2.jpg"
-            scale="0.1 0.1 0.1"
-            position="25.699191878574936,-100.31767793055666,0"
-          ></a-entity>
-        </a-marker>
-        
-        <a-entity camera></a-entity>
-      </a-scene>
-    </div>
-  </body>
-</html>
-  </head>
-  <body>
-    <div id="ar-container">
-      <a-scene embedded arjs>
-        <a-marker preset="hiro">
-          <!-- Add your 3D objects here -->
-          <a-entity
-            src="img1.jpg"
-            scale="0.1 0.1 0.1"
-            position="25.699185232118268, -100.31764373239147,0"
-          ></a-entity>
-          
-          <!-- Add more entities for other places -->
-          <a-entity
-           src="img2.jpg"
-            scale="0.1 0.1 0.1"
-            position="25.69920755459637,-100.31762767193608,0"
-          ></a-entity>
-          
-          <a-entity
-            src="img2.jpg"
-            scale="0.1 0.1 0.1"
-            position="25.69920755459637,-100.31767508714103,0"
-          ></a-entity>
-          
-          <a-entity
-            src="img1.jpg"
-            scale="0.1 0.1 0.1"
-            position="25.699210005273066,-100.3176008170469,0"
-          ></a-entity>
-          
-          <a-entity
-            src="img2.jpg"
+             gltf-model="url(files/f1/scene.gltf)"
             scale="0.1 0.1 0.1"
             position="25.699191878574936,-100.31767793055666,0"
           ></a-entity>
