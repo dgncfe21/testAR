@@ -23,7 +23,7 @@ function staticLoadPlaces() {
 
 var models = [
     {
-        url: './assets/traf/scene.gltf',
+        url: './assets/poste1/scene.gltf',
         scale: '0.5 0.5 0.5',
         rotation: '0 180 0',
         info: 'DGN CFE GOLFO NORTE',
