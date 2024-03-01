@@ -22,7 +22,7 @@ function staticLoadPlaces() {
                 lat: 25.699208876107605,
                 lng: -100.31783408618175,
             },
-            modelFile: './assets/traf/scene.gltf',
+            modelFile: './assets/poste1/scene.gltf',
         },
         {
             name: 'Location 3',
