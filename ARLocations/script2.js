@@ -14,7 +14,7 @@ function staticLoadPlaces() {
                 lat: 25.6978482902565, 
                 lng: -100.3181391435602,
             },
-            imageFile: './assets/subestacion_universidad.jpg',
+            imageFile: './assets/_39cc3336-a1a8-4be9-a60e-886c68d3833e.jpg',
         },
         {
             name: 'Location 2',
@@ -22,7 +22,7 @@ function staticLoadPlaces() {
                 lat: 25.699208876107605,
                 lng: -100.31783408618175,
             },
-            imageFile: './assets/location2.jpg',
+            imageFile: './assets/_d07d067d-633a-448c-813c-884d06461d57.jpg',
         },
         {
             name: 'Location 3',
@@ -30,7 +30,7 @@ function staticLoadPlaces() {
                 lat: 25.69919058489684, 
                 lng: -100.31769988631393,
             },
-            imageFile: './assets/location3.jpg',
+            imageFile: './assets/Bard_Generated_Image1.jpg.jpg',
         },
     ];
 }
