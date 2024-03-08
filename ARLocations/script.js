@@ -9,10 +9,10 @@ window.onload = () => {
 function staticLoadPlaces() {
     return [
         {
-            name: 'Location1',
+            name: 'SUBESTACION UNIVERSIDAD',
             location: {
-                lat: 25.699220054068363,
-                lng: -100.31767394852433,
+                lat: 25.6978482902565, 
+                lng: -100.3181391435602,
             },
             modelFile: './assets/poste1/scene.gltf',
         },
@@ -30,7 +30,7 @@ function staticLoadPlaces() {
                 lat: 25.69919058489684, 
                 lng: -100.31769988631393,
             },
-            modelFile: './assets/poste1l/scene.gltf',
+            modelFile: './assets/traf/scene.gltf',
         },
     ];
 }
@@ -61,6 +61,13 @@ function renderPlaces(places) {
         model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
 
         setModel(place.modelFile, model);
+
+         // Add a data text label over each location model
+          let dataText = document.createElement('a-text');
+          dataText.setAttribute('value', place.name);
+          dataText.setAttribute('position', '0 1 0');
+          dataText.setAttribute('color', 'white');
+          model.appendChild(dataText);
 
         model.setAttribute('animation-mixer', '');
 
