@@ -30,7 +30,7 @@ function staticLoadPlaces() {
                 lat: 25.69919058489684, 
                 lng: -100.31769988631393,
             },
-            modelFile: './assets/traf/scene.gltf',
+            modelFile: './assets/poste1/scene.gltf',
         },
     ];
 }
