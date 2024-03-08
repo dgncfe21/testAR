@@ -14,7 +14,7 @@ function staticLoadPlaces() {
                 lat: 25.6978482902565, 
                 lng: -100.3181391435602,
             },
-            modelFile: './assets/poste1/scene.gltf',
+            imageFile: './assets/subestacion_universidad.jpg',
         },
         {
             name: 'Location 2',
@@ -22,7 +22,7 @@ function staticLoadPlaces() {
                 lat: 25.699208876107605,
                 lng: -100.31783408618175,
             },
-            modelFile: './assets/poste1/scene.gltf',
+            imageFile: './assets/location2.jpg',
         },
         {
             name: 'Location 3',
@@ -30,25 +30,10 @@ function staticLoadPlaces() {
                 lat: 25.69919058489684, 
                 lng: -100.31769988631393,
             },
-            modelFile: './assets/poste1/scene.gltf',
+            imageFile: './assets/location3.jpg',
         },
     ];
 }
-
-var models = [
-    {
-        url: './assets/poste1/scene.gltf',
-        scale: '0.5 0.5 0.5',
-        rotation: '0 180 0',
-        info: 'DGN CFE GOLFO NORTE',
-    },
-    {
-        url: './assets/traf/scene.gltf',
-        scale: '0.5 0.5 0.5',
-        info: 'Transformador',
-        rotation: '0 180 0',
-    },
-];
 
 function renderPlaces(places) {
     let scene = document.querySelector('a-scene');
@@ -60,14 +45,8 @@ function renderPlaces(places) {
         let model = document.createElement('a-entity');
         model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
 
-        setModel(place.modelFile, model);
-
-         // Add a data text label over each location model
-        let dataText = document.createElement('a-text');
-        dataText.setAttribute('value', place.name);
-        dataText.setAttribute('position', '0 1 0');
-        dataText.setAttribute('color', 'white');
-        model.appendChild(dataText);
+        // Provide the URL of the image and the text to display
+        setModel(place.imageFile, model, place.name);
 
         model.setAttribute('animation-mixer', '');
 
@@ -75,9 +54,21 @@ function renderPlaces(places) {
     });
 }
 
-function setModel(modelFile, entity) {
-    entity.setAttribute('gltf-model', `url(${modelFile})`);
-    // You can also set other attributes like scale, rotation, position here if needed
+function setModel(imageFile, entity, text) {
+    // Create an a-image entity
+    let image = document.createElement('a-image');
+    image.setAttribute('src', imageFile);
+    image.setAttribute('width', '2');
+    image.setAttribute('height', '2');
+    image.setAttribute('position', '0 0 0'); // Adjust position if needed
+    entity.appendChild(image);
+
+    // Create an a-text entity for the tag
+    let dataText = document.createElement('a-text');
+    dataText.setAttribute('value', text);
+    dataText.setAttribute('position', '0 -1 0'); // Adjust position if needed
+    dataText.setAttribute('color', 'white');
+    entity.appendChild(dataText);
 }
 
 function startAR() {
@@ -86,3 +77,4 @@ function startAR() {
     scene.style.cursor = 'pointer';
     scene.setAttribute('arjs', 'startOnClick: true');
 }
+
