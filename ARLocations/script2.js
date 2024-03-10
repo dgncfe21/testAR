@@ -14,7 +14,7 @@ function staticLoadPlaces() {
                 lat: 25.6978482902565, 
                 lng: -100.3181391435602,
             },
-            imageFile: './assets/_39cc3336-a1a8-4be9-a60e-886c68d3833e.jpg',
+            imageFile: './assets/marco1.jpg',
         },
         {
             name: 'Location 2',
@@ -38,7 +38,7 @@ function staticLoadPlaces() {
                 lat: 25.69919058489684, 
                 lng: -100.31769988631393,
             },
-            imageFile: './assets/Bard_Generated_Image1.jpg.jpg',
+             imageFile: './assets/marco1.jpg',
         },
     ];
 }
