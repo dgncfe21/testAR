@@ -27,8 +27,8 @@ function staticLoadPlaces() {
         {
             name: 'COLINAS',
             location: {
-                lat: 25.691405583707088,
-                lng: 100.37202514431087,
+                lat: 25.69142021154416,
+                lng: -100.37209907638143,
             },
             imageFile: './assets/_d07d067d-633a-448c-813c-884d06461d57.jpg',
         },
