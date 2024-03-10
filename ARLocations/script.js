@@ -17,6 +17,14 @@ function staticLoadPlaces() {
             modelFile: './assets/poste1/scene.gltf',
         },
         {
+            name: 'COLINAS',
+            location: {
+                lat: 25.69142021154416,
+                lng: -100.37209907638143,
+            },
+             modelFile: './assets/poste1/scene.gltf',
+        },
+        {
             name: 'Location 2',
             location: {
                 lat: 25.699208876107605,
