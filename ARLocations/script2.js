@@ -22,7 +22,7 @@ function staticLoadPlaces() {
                 lat: 25.699208876107605,
                 lng: -100.31783408618175,
             },
-            imageFile: './assets/_d07d067d-633a-448c-813c-884d06461d57.jpg',
+          imageFile: './assets/marco1.jpg',
         },
         {
             name: 'COLINAS',
@@ -30,7 +30,7 @@ function staticLoadPlaces() {
                 lat: 25.69142021154416,
                 lng: -100.37209907638143,
             },
-            imageFile: './assets/marco1.jpg',
+           imageFile: './assets/marco1.jpg',
         },
         {
             name: 'Location 3',
